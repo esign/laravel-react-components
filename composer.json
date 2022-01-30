@@ -1,17 +1,19 @@
 {
-    "name": ":vendor/:package_slug",
-    "description": ":package_description",
+    "name": "esign/laravel-react-components",
+    "description": "Use react components within laravel",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "esign",
+        "react-components",
+        "react",
+        "components"
     ],
-    "homepage": "https://github.com/:vendor/:package_slug",
+    "homepage": "https://github.com/esign/laravel-react-components",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Jordy Van der Haegen",
+            "email": "jordy.vanderhaegen@gmail.com",
             "role": "Developer"
         }
     ],
@@ -26,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            ":vendor_namespace_escaped\\": "src"
+            "Esign\\ReactComponents\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":vendor_namespace_escaped\\Tests\\": "tests"
+            "Esign\\ReactComponents\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,11 +46,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                ":vendor_namespace_escaped\\:studly_package_nameServiceProvider"
-            ],
-            "aliases": {
-                ":studly_package_name": ":vendor_namespace_escaped\\Facades\\:studly_package_nameFacade"
-            }
+                "Esign\\ReactComponents\\ReactComponentsServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
