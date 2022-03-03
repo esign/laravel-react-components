@@ -10,6 +10,9 @@ class ReactComponentsServiceProvider extends ServiceProvider
 {
     public function boot()
     {
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'react-components');
+        Blade::component('react-components::components.react-component', 'react-component');
+
         if ($this->app->runningInConsole()) {
             $this->commands([
                 InstallCommand::class,
@@ -20,7 +23,7 @@ class ReactComponentsServiceProvider extends ServiceProvider
     public function register()
     {
         Blade::directive('reactComponent', function ($expression) {
-            return "<?php echo \Esign\ReactComponents\ReactComponent::renderContainer({$expression}) ?>";
+            return "<?php echo \Esign\ReactComponents\ReactComponentDirective::render({$expression}) ?>";
         });
     }
 }

@@ -23,6 +23,17 @@ To register the container for a react component a `@reactComponent` directive ha
 @reactComponent('article-card', ['article' => $article])
 ```
 
+In case you want some more customization you may always use the [anonymous component](https://laravel.com/docs/blade#anonymous-components).
+This component allows you to pass additional attributes and define as what HTML tag the component should be rendered:
+```blade
+<x-react-component
+    component="article-card"
+    :props="['article' => $article]"
+    as="span"
+    class="container"
+/>
+```
+
 To register the components in your frontend build, you may use the `registerReactComponents` function included in this package. This can be published using the following command:
 ```bash
 php artisan react-components:install
