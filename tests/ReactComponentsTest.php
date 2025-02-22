@@ -2,12 +2,13 @@
 
 namespace Esign\ReactComponents\Tests;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Support\Facades\Blade;
 
-class ReactComponentsTest extends TestCase
+final class ReactComponentsTest extends TestCase
 {
-    /** @test */
-    public function it_can_render_the_react_component_without_props()
+    #[Test]
+    public function it_can_render_the_react_component_without_props(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -21,8 +22,8 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
-    public function it_can_render_the_react_component_using_a_different_html_tag()
+    #[Test]
+    public function it_can_render_the_react_component_using_a_different_html_tag(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -36,8 +37,8 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
-    public function it_can_pass_extra_attributes_to_the_react_component()
+    #[Test]
+    public function it_can_pass_extra_attributes_to_the_react_component(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -51,8 +52,8 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
-    public function it_can_render_the_react_component_with_props()
+    #[Test]
+    public function it_can_render_the_react_component_with_props(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -66,8 +67,8 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
-    public function it_can_convert_html_open_and_close_tags()
+    #[Test]
+    public function it_can_convert_html_open_and_close_tags(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -81,8 +82,8 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
-    public function it_can_convert_double_quotes()
+    #[Test]
+    public function it_can_convert_double_quotes(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -96,8 +97,8 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
-    public function it_can_convert_single_quotes()
+    #[Test]
+    public function it_can_convert_single_quotes(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -111,8 +112,8 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
-    public function it_can_convert_ampersands()
+    #[Test]
+    public function it_can_convert_ampersands(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -126,8 +127,8 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
-    public function it_can_render_as_a_directive()
+    #[Test]
+    public function it_can_render_as_a_directive(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -141,8 +142,8 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
-    public function it_can_render_as_a_directive_with_props()
+    #[Test]
+    public function it_can_render_as_a_directive_with_props(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -156,8 +157,8 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
-    public function it_can_render_as_the_non_aliased_blade_component()
+    #[Test]
+    public function it_can_render_as_the_non_aliased_blade_component(): void
     {
         $this->assertEquals(
             <<<HTML
