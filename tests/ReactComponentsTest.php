@@ -5,7 +5,7 @@ namespace Esign\ReactComponents\Tests;
 use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Support\Facades\Blade;
 
-class ReactComponentsTest extends TestCase
+final class ReactComponentsTest extends TestCase
 {
     #[Test]
     public function it_can_render_the_react_component_without_props(): void
