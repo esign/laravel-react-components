@@ -2,11 +2,12 @@
 
 namespace Esign\ReactComponents\Tests;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Support\Facades\Blade;
 
 class ReactComponentsTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_can_render_the_react_component_without_props()
     {
         $this->assertEquals(
@@ -21,7 +22,7 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function it_can_render_the_react_component_using_a_different_html_tag()
     {
         $this->assertEquals(
@@ -36,7 +37,7 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function it_can_pass_extra_attributes_to_the_react_component()
     {
         $this->assertEquals(
@@ -51,7 +52,7 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function it_can_render_the_react_component_with_props()
     {
         $this->assertEquals(
@@ -66,7 +67,7 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function it_can_convert_html_open_and_close_tags()
     {
         $this->assertEquals(
@@ -81,7 +82,7 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function it_can_convert_double_quotes()
     {
         $this->assertEquals(
@@ -96,7 +97,7 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function it_can_convert_single_quotes()
     {
         $this->assertEquals(
@@ -111,7 +112,7 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function it_can_convert_ampersands()
     {
         $this->assertEquals(
@@ -126,7 +127,7 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function it_can_render_as_a_directive()
     {
         $this->assertEquals(
@@ -141,7 +142,7 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function it_can_render_as_a_directive_with_props()
     {
         $this->assertEquals(
@@ -156,7 +157,7 @@ class ReactComponentsTest extends TestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function it_can_render_as_the_non_aliased_blade_component()
     {
         $this->assertEquals(
