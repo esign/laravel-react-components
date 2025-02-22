@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Blade;
 class ReactComponentsTest extends TestCase
 {
     #[Test]
-    public function it_can_render_the_react_component_without_props()
+    public function it_can_render_the_react_component_without_props(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -23,7 +23,7 @@ class ReactComponentsTest extends TestCase
     }
 
     #[Test]
-    public function it_can_render_the_react_component_using_a_different_html_tag()
+    public function it_can_render_the_react_component_using_a_different_html_tag(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -38,7 +38,7 @@ class ReactComponentsTest extends TestCase
     }
 
     #[Test]
-    public function it_can_pass_extra_attributes_to_the_react_component()
+    public function it_can_pass_extra_attributes_to_the_react_component(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -53,7 +53,7 @@ class ReactComponentsTest extends TestCase
     }
 
     #[Test]
-    public function it_can_render_the_react_component_with_props()
+    public function it_can_render_the_react_component_with_props(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -68,7 +68,7 @@ class ReactComponentsTest extends TestCase
     }
 
     #[Test]
-    public function it_can_convert_html_open_and_close_tags()
+    public function it_can_convert_html_open_and_close_tags(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -83,7 +83,7 @@ class ReactComponentsTest extends TestCase
     }
 
     #[Test]
-    public function it_can_convert_double_quotes()
+    public function it_can_convert_double_quotes(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -98,7 +98,7 @@ class ReactComponentsTest extends TestCase
     }
 
     #[Test]
-    public function it_can_convert_single_quotes()
+    public function it_can_convert_single_quotes(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -113,7 +113,7 @@ class ReactComponentsTest extends TestCase
     }
 
     #[Test]
-    public function it_can_convert_ampersands()
+    public function it_can_convert_ampersands(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -128,7 +128,7 @@ class ReactComponentsTest extends TestCase
     }
 
     #[Test]
-    public function it_can_render_as_a_directive()
+    public function it_can_render_as_a_directive(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -143,7 +143,7 @@ class ReactComponentsTest extends TestCase
     }
 
     #[Test]
-    public function it_can_render_as_a_directive_with_props()
+    public function it_can_render_as_a_directive_with_props(): void
     {
         $this->assertEquals(
             <<<HTML
@@ -158,7 +158,7 @@ class ReactComponentsTest extends TestCase
     }
 
     #[Test]
-    public function it_can_render_as_the_non_aliased_blade_component()
+    public function it_can_render_as_the_non_aliased_blade_component(): void
     {
         $this->assertEquals(
             <<<HTML
